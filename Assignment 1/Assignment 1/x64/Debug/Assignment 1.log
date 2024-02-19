@@ -1,0 +1,5 @@
+﻿  Assignment 1.cpp
+C:\Users\User\source\repos\Assignment 1\Assignment 1\Assignment 1.cpp(87,10): warning C4101: 'remove': unreferenced local variable
+C:\Users\User\source\repos\Assignment 1\Assignment 1\Assignment 1.cpp(213,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\source\repos\Assignment 1\Assignment 1\Assignment 1.cpp(235,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Assignment 1.vcxproj -> C:\Users\User\source\repos\Assignment 1\x64\Debug\Assignment 1.exe
