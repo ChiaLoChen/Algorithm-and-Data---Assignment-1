@@ -64,7 +64,7 @@ void Insert(int id, string name, float price, string category) {
 }
 string trim(const string& str) {
     size_t first = str.find_first_not_of(' ');
-    if (std::string::npos == first) {
+    if (string::npos == first) {
         return str;
     }
     size_t last = str.find_last_not_of(' ');
@@ -265,19 +265,19 @@ int main()
     if (MyReadFile.is_open()) {
         while (getline(MyReadFile, myText)) {
             stringstream ss(myText);
-            string token;
+            string word;
 
-            getline(ss, token, ',');
-            id = stoi(token);
+            getline(ss, word, ',');
+            id = stoi(word);
 
-            getline(ss, token, ',');
-            name = trim(token);
+            getline(ss, word, ',');
+            name = trim(word);
 
-            getline(ss, token, ',');
-            price = stof(token);
+            getline(ss, word, ',');
+            price = stof(word);
 
-            getline(ss, token, ',');
-            category = trim(token);
+            getline(ss, word, ',');
+            category = trim(word);
 
             ss >> id >> name >> price >> category;
             products.push_back(Product(id, name, price, category));
